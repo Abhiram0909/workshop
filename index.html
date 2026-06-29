@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Paradise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Bring calm home</p>
+          <h1>Find the perfect plant for your space</h1>
+          <p class="hero-text">
+            Choose easy-care greenery for your bedroom, living room, and office.
+          </p>
+          <button class="primary-btn" onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">
+            Shop now
+          </button>
+        </div>
+        <div class="hero-card">
+          <h2>Fresh picks</h2>
+          <ul>
+            <li>Low-maintenance favorites</li>
+            <li>Fast delivery</li>
+            <li>Care tips included</li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <section id="shop" class="products-section">
+          <div class="section-heading">
+            <h2>Popular plants</h2>
+            <p>Bright, leafy, and simple to love.</p>
+          </div>
+          <div id="product-list" class="product-grid"></div>
+        </section>
+
+        <aside class="cart-card">
+          <div class="cart-header">
+            <h2>Your cart</h2>
+            <span id="cart-count" class="badge">0</span>
+          </div>
+          <div id="cart-items" class="cart-items"></div>
+          <div class="cart-footer">
+            <div class="total-row">
+              <span>Total</span>
+              <strong id="cart-total">$0</strong>
+            </div>
+            <button id="checkout-btn" class="primary-btn full-width">Checkout</button>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
